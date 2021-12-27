@@ -47,3 +47,8 @@ data "aws_iam_policy_document" "key_policy" {
 }
      
 }
+
+resource "aws_vpc" "celia" {
+  cidr_block = "10.0.0.0/16"
+  
+}
